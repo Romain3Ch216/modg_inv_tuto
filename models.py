@@ -46,6 +46,12 @@ class VAE(nn.Module):
 
     def decode(self, z):
         return self.decoder(z)
+    
+    def sample(self, n_samples):
+        z = torch.randn(n_samples, self.latent_dim)
+        x = (self.decode(z) > 0.5).float()
+        x = x.view(n_samples, int(x.shape[-1]**0.5), -1)
+        return x
 
     def forward(self, x):
         mu, logvar = self.encode(x)

@@ -5,7 +5,7 @@ import pytorch_lightning as pl
 from models import VAE
 
 
-class VAE(pl.LightningModule):
+class plVAE(pl.LightningModule):
     def __init__(self, input_dim=784, latent_dim=32, lr=1e-3):
         super().__init__()
         self.save_hyperparameters()
