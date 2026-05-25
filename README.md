@@ -10,8 +10,6 @@ The only parts of the code to complete are in the notebook.
 
 The code requires pixi: https://pixi.prefix.dev/latest/installation/.
 
-Then, simply open the notebook running:
-
-```pixi run start```
+Then, simply open the notebook running ```pixi run start``` in your terminal.
 
 
