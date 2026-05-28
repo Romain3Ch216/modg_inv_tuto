@@ -3,7 +3,6 @@
 !.pixi/config.toml
 
 data
-checkpoints
 __pycache__
 
 .ipynb_checkpoints
